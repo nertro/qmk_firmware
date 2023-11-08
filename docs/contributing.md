@@ -114,16 +114,6 @@ or if you only have Python 3 installed:
 
 and navigating to `http://localhost:8936/`.
 
-## Keymaps
-
-Most first-time QMK contributors start with their personal keymaps. We try to keep keymap standards pretty casual (keymaps, after all, reflect the personality of their creators) but we do ask that you follow these guidelines to make it easier for others to discover and learn from your keymap.
-
-* Write a `readme.md` using [the template](documentation_templates.md).
-* All Keymap PRs are squashed, so if you care about how your commits are squashed you should do it yourself
-* Do not lump features in with keymap PRs. Submit the feature first and then a second PR for the keymap.
-* Do not include `Makefile`s in your keymap folder (they're no longer used)
-* Update copyrights in file headers (look for `%YOUR_NAME%`)
-
 ## Keyboards
 
 Keyboards are the raison d'être for QMK. Some keyboards are community maintained, while others are maintained by the people responsible for making a particular keyboard. The `readme.md` should tell you who maintains a particular keyboard. If you have questions relating to a particular keyboard you can [Open An Issue](https://github.com/qmk/qmk_firmware/issues) and tag the maintainer in your question.

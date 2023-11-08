@@ -27,9 +27,6 @@
 #ifdef HAPTIC_SOLENOID
 #    include "solenoid.h"
 #endif
-#if defined(SPLIT_KEYBOARD) && defined(SPLIT_HAPTIC_ENABLE)
-extern uint8_t split_haptic_play;
-#endif
 
 #if defined(SPLIT_KEYBOARD) && defined(SPLIT_HAPTIC_ENABLE)
 extern uint8_t split_haptic_play;

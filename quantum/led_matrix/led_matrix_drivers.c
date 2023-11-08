@@ -242,13 +242,13 @@ static void shutdown(void) {
 #       if defined(LED_DRIVER_SHUTDOWN_PIN)
     writePinLow(LED_DRIVER_SHUTDOWN_PIN);
 #       else
-    CKLED2001_sw_shutdown(DRIVER_ADDR_1);
+    ckled2001_sw_shutdown(DRIVER_ADDR_1);
 #           if defined(DRIVER_ADDR_2)
-    CKLED2001_sw_shutdown(DRIVER_ADDR_2);
+    ckled2001_sw_shutdown(DRIVER_ADDR_2);
 #               if defined(DRIVER_ADDR_3)
-    CKLED2001_sw_shutdown(DRIVER_ADDR_3);
+    ckled2001_sw_shutdown(DRIVER_ADDR_3);
 #                   if defined(DRIVER_ADDR_4)
-    CKLED2001_sw_shutdown(DRIVER_ADDR_4);
+    ckled2001_sw_shutdown(DRIVER_ADDR_4);
 #                   endif
 #               endif
 #           endif
@@ -259,13 +259,13 @@ static void exit_shutdown(void) {
 #       if defined(LED_DRIVER_SHUTDOWN_PIN)
     writePinHigh(LED_DRIVER_SHUTDOWN_PIN);
 #       else
-    CKLED2001_sw_return_normal(DRIVER_ADDR_1);
+    ckled2001_sw_return_normal(DRIVER_ADDR_1);
 #           if defined(DRIVER_ADDR_2)
-    CKLED2001_sw_return_normal(DRIVER_ADDR_2);
+    ckled2001_sw_return_normal(DRIVER_ADDR_2);
 #               if defined(DRIVER_ADDR_3)
-    CKLED2001_sw_return_normal(DRIVER_ADDR_3);
+    ckled2001_sw_return_normal(DRIVER_ADDR_3);
 #                   if defined(DRIVER_ADDR_4)
-    CKLED2001_sw_return_normal(DRIVER_ADDR_4);
+    ckled2001_sw_return_normal(DRIVER_ADDR_4);
 #                   endif
 #               endif
 #           endif

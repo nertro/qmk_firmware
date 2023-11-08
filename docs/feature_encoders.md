@@ -106,8 +106,6 @@ Using encoder mapping pumps events through the normal QMK keycode processing pip
 
 If you would like the alter the default behaviour, and are not using `ENCODER_MAP_ENABLE = yes`, the callback functions can be inserted into your `<keyboard>.c`:
 
-?> Those who are adding new keyboard support where encoders are enabled at the keyboard level should include basic encoder functionality at the keyboard level (`<keyboard>.c`) using the `encoder_update_kb()` function, that way it works for QMK Configuator users and exists in general.
-
 ```c
 bool encoder_update_kb(uint8_t index, bool clockwise) {
     if (!encoder_update_user(index, clockwise)) {

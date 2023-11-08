@@ -18,5 +18,5 @@
 
 #include "eeprom.h"
 
-uint16_t eeprom_driver_init(void);
+void eeprom_driver_init(void);
 void eeprom_driver_erase(void);
