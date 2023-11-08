@@ -29,7 +29,6 @@
     "BACKLIGHT_ON_STATE": {"info_key": "backlight.on_state", "value_type": "int"},
     "BACKLIGHT_PIN": {"info_key": "backlight.pin"},
     "BACKLIGHT_PINS": {"info_key": "backlight.pins", "value_type": "array"},
-    "BREATHING_PERIOD": {"info_key": "backlight.breathing_period", "value_type": "int"},
 
     // Bootmagic
     "BOOTMAGIC_LITE_COLUMN": {"info_key": "bootmagic.matrix.1", "value_type": "int"},
@@ -49,12 +48,6 @@
     // Dynamic Keymap
     "DYNAMIC_KEYMAP_EEPROM_MAX_ADDR": {"info_key": "dynamic_keymap.eeprom_max_addr", "value_type": "int"},
     "DYNAMIC_KEYMAP_LAYER_COUNT": {"info_key": "dynamic_keymap.layer_count", "value_type": "int"},
-    "HOLD_ON_OTHER_KEY_PRESS": {"info_key": "tapping.hold_on_other_key_press", "value_type": "bool"},
-    "HOLD_ON_OTHER_KEY_PRESS_PER_KEY": {"info_key": "tapping.hold_on_other_key_press_per_key", "value_type": "bool"},
-    "LAYOUTS": {"info_key": "layout_aliases", "value_type": "mapping"},
-    "LEADER_PER_KEY_TIMING": {"info_key": "leader_key.timing", "value_type": "bool"},
-    "LEADER_KEY_STRICT_KEY_PROCESSING": {"info_key": "leader_key.strict_processing", "value_type": "bool"},
-    "LEADER_TIMEOUT": {"info_key": "leader_key.timeout", "value_type": "int"},
 
     // Indicators
     "LED_CAPS_LOCK_PIN": {"info_key": "indicators.caps_lock"},
