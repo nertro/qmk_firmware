@@ -75,7 +75,7 @@ __attribute__((weak)) void usb_transport_enable(bool enable) {
 
 #if !defined(KEEP_USB_CONNECTION_IN_BLUETOOTH_MODE)
             usb_power_connect();
-            usb_start(&USBD1);
+            restart_usb_driver(&USBD1);
 #endif
             host_set_driver(&chibios_driver);
         }
@@ -180,7 +180,7 @@ void usb_remote_wakeup(void) {
             /* Remote wakeup */
             if (suspend_wakeup_condition()) {
                 usbWakeupHost(&USB_DRIVER);
-                usb_wakeup(&USB_DRIVER);
+                _usb_wakeup(&USB_DRIVER);
             }
         }
         wait_ms(500);

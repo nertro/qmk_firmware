@@ -17,9 +17,9 @@ bool JELLYBEAN_RAINDROPS(effect_params_t* params) {
             jellybean_raindrops_set_color(random8_max(RGB_MATRIX_LED_COUNT), params);
         }
     } else {
-        for (int i = led_min; i < led_max; i++) {
-            jellybean_raindrops_set_color(i, params);
-        }
+    for (int i = led_min; i < led_max; i++) {
+        jellybean_raindrops_set_color(i, params);
+    }
     }
     return rgb_matrix_check_finished_leds(led_max);
 }
